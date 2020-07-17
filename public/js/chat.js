@@ -10,7 +10,7 @@ const $messages = document.querySelector('#messages')
 //templetes
 const messageTemplete = document.querySelector('#message-templete').innerHTML
 const locationMessageTemplate = document.querySelector('#location-message-templete').innerHTML
-const sidebarTemplete = document.querySelector('#sidebar-templete').innerHTML
+const sidebarTemplete = document.querySelector('#sidebar-template').innerHTML
 
 //Options
 const {username , room} = Qs.parse(location.search, {ignoreQueryPrefix : true})
