@@ -10,7 +10,7 @@ const $messages = document.querySelector('#messages')
 //templetes
 const messageTemplete = document.querySelector('#message-templete').innerHTML
 const locationMessageTemplate = document.querySelector('#location-message-templete').innerHTML
-const sidebarTemplet = document.querySelector('#sidebar-templete').innerHTML
+const sidebarTemplete = document.querySelector('#sidebar-templete').innerHTML
 
 //Options
 const {username , room} = Qs.parse(location.search, {ignoreQueryPrefix : true})
@@ -61,7 +61,7 @@ socket.on('locationMessage',(message)=>{
 })
 
 socket.on('roomData', ({room,users}) =>{
-    const html = Mustache.render(sidebarTemplet,{
+    const html = Mustache.render(sidebarTemplete,{
         room,
         users
     })
